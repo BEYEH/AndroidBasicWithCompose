@@ -1,0 +1,37 @@
+# === Gradle ===
+**/.gradle/
+**/build/
+**/local.properties
+
+# === Android Studio / IntelliJ IDEA ===
+**/.idea/
+**/*.iml
+**/.cxx/
+**/.externalNativeBuild/
+**/captures/
+**/output.json
+
+# === Logs / Temporary Files ===
+**/*.log
+**/*.tmp
+
+# === Compiled APKs / Binaries ===
+**/*.apk
+**/*.ap_
+
+# === Keystore / Secrets ===
+**/*.jks
+**/*.keystore
+**/google-services.json
+
+# === Android Profiling ===
+**/*.hprof
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === IntelliJ/AS Specific XMLs ===
+**/misc.xml
+**/deploymentTargetDropDown.xml
+**/render.experimental.xml
