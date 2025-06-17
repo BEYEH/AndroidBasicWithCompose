@@ -35,7 +35,36 @@
   ```
 
 ### Set up Android Studio
-### Build a basoc layout
+### Build a basic layout
+
+- What is Jetpack Compose ?
+  - Jetpack Compose is a modern toolkit for building Android UIs. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin capabilities. With Compose, you can build your UI by defining a set of functions, called composable functions, that take in data and describe UI elements.
+- Composable functions are the basic building block of a UI in Compose. A composable function:
+    - Describes some part of your UI.
+    - Doesn't return anything.
+    - Takes some input and generates what's shown on the screen.
+    - Function name MUST be a `noun` and using Pascal case.
+- Annotations
+  - Annotations are means of attaching extra information to code. 
+  - An annotation is applied by prefixing its name (the annotation) with the @ character at the beginning of the declaration you are annotating. 
+
+    ``` kotlin
+    // Annotations & Function declaration
+    @Composable
+    fun funcName(...){...}
+    ```
+
+  - Annotations can take parameters. Parameters provide extra information to the tools processing them.
+
+    ``` kotlin
+    @Preview(
+        showBackground = true,
+        showSystemUi = true,
+        name = "My Preview"
+    )
+    ```
+
+  - All composable functions must have `@Composable` function. This annotation informs the Compose compiler that this function is intended to convert data into UI.
 
 ## Resources
 
