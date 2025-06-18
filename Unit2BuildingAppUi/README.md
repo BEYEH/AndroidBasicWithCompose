@@ -47,6 +47,10 @@
 
 ### Add a button to an app
 
+- Example
+  - Dice Roller app
+- Compose uses a `Modifier` object, which is a collection of elements that decorate or modify the behavior of Compose UI elements.
+
 ### Interact with UI and state
 
 ## Resources
