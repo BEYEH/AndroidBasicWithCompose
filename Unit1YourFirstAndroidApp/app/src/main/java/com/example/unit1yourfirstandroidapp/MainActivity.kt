@@ -38,7 +38,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(
+    showBackground = true,
+    showSystemUi = true,
+    name = "First Android App"
+)
 @Composable
 fun GreetingPreview() {
     Unit1YourFirstAndroidAppTheme {
