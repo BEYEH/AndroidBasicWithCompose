@@ -73,6 +73,17 @@
   - density-independent pixels (DP): a unit of measure for the layout.
   - scalable pixels (SP): a unit of measure for the font size.
 - Every composable function should accept an optional `Modifier` parameter. `Modifiers` tell a UI element how to lay out, display, or behave within its parent layout.
+- Accessing resources
+  - An `R` class is an automatically generated class by Android that contains the IDs of all resources in the project.
+
+    ``` kotlin
+    /*
+      R: Auto generated R class
+      drawable: Subdirectory in 'res' folder
+      graphic: Resource ID (mostly same as filename)
+    */
+    R.drawable.graphic
+    ```
 
 ## Resources
 
