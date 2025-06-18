@@ -72,6 +72,7 @@
 - Android apps two different units of measurement:
   - density-independent pixels (DP): a unit of measure for the layout.
   - scalable pixels (SP): a unit of measure for the font size.
+- Every composable function should accept an optional `Modifier` parameter. `Modifiers` tell a UI element how to lay out, display, or behave within its parent layout.
 
 ## Resources
 
