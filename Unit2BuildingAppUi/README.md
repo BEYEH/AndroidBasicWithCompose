@@ -41,9 +41,15 @@
     println(temp!!.length)
     ```
 
+  - Unlike `?.` safe-call operators, the use of a `!!` not-null assertion operator may result in a `NullPointerException` error being thrown if the nullable variable is indeed `null`. Thus, it should be done only when the variable is always non-nullable or proper exception handling is set in place. When not handled, exceptions cause runtime errors. 
+  - Conclusion
+    - To access methods or properties of nullable variables, you need to use `?.` safe-call operators or `!!` not-null assertion operators.
+
 ### Add a button to an app
 
 ### Interact with UI and state
 
 ## Resources
 
+- [Unit 2: Building app UI](https://developer.android.com/courses/android-basics-compose/unit-2)
+- [Kotlin Playground](https://play.kotlinlang.org/)
