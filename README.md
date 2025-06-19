@@ -10,6 +10,7 @@
     - Test - Lemonade App
   - Unit 3: Display lists and use Material Design
   - Unit 4: Navigation and app architecture
+    - Example - Dessert Clicker
   - Unit 5: Connect to the internet
   - Unit 6: Data persistence
   - Unit 7: WorkManager
