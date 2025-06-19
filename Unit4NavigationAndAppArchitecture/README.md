@@ -35,6 +35,12 @@
   - To let Compose track and trigger recomposition, state must be stored in a `State` or `MutableState` object. `State` is read-only, while `MutableState` allows both reading and writing.
   - To instruct Compose to retain and reuse its value during recompositions, you need to declare it with the `remember` API.
   - Use the `rememberSaveable` function to save values that you need if Android OS destroys and recreates the activity.
+  - Configuration changes
+    - A configuration change occurs when the state of the device changes so radically that the easiest way for the system to resolve the change is to destroy and rebuild the activity.
+    - The most common example of a configuration change is when the user rotates the device from portrait to landscape mode, or from landscape to portrait mode. A configuration change can also occur when the device language changes or a user plugs in a hardware keyboard.
+    - When a configuration change occurs, Android invokes all the activity lifecycle's shutdown callbacks. Android then restarts the activity from scratch, running all the lifecycle startup callbacks.
+    - When Android shuts down an app because of a configuration change, it restarts the activity with `onCreate()`.
+    - To save a value that needs to survive a configuration change, declare its variables with `rememberSaveable`.
 
 ### Navigation in Jetpack Compose
 
