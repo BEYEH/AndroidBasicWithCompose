@@ -19,7 +19,9 @@
   - In the past, one activity would display one screen in an app.
   - With current best practices, one activity might display multiple screens by swapping them in and out as needed.
   - The activity lifecycle extends from the creation of the activity to its destruction, when the system reclaims that activity's resources. As a user navigates in and out of an activity, each activity transitions between different states in the activity lifecycle.
-  - 
+  - The asterisk on the onRestart() method indicates that this method is not called every time the state transitions between Created and Started. It is only called if onStop() was called and the activity is subsequently restarted.
+  
+    <img src="../images/activity_lifecycle.png" alt="The Activity Lifecycle" width="300"/>
 
 ### Navigation in Jetpack Compose
 
