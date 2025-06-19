@@ -41,6 +41,10 @@
     - When a configuration change occurs, Android invokes all the activity lifecycle's shutdown callbacks. Android then restarts the activity from scratch, running all the lifecycle startup callbacks.
     - When Android shuts down an app because of a configuration change, it restarts the activity with `onCreate()`.
     - To save a value that needs to survive a configuration change, declare its variables with `rememberSaveable`.
+- ViewModel and State in Compose
+  - When apps grow, you should move data and logic away from composables. Learn about a robust way to design your app and preserve app data during configuration changes by taking advantage of the Android Jetpack library, `ViewModel` and Android app architecture guidelines.
+  - App architecture is a set of design rules for an app. A good app architecture can make your code robust, flexible, scalable, testable, and maintainable for years to come.
+  - `ViewModel`, one of the architecture components from Android Jetpack libraries that can store your app data. The stored data is not lost if the framework destroys and recreates the activities during a configuration change or other events. However, the data is lost if the activity is destroyed because of process death. The `ViewModel` only caches data through quick activity recreations.
 
 ### Navigation in Jetpack Compose
 
@@ -49,3 +53,4 @@
 ## Resources
 
 - [Unit 4: Navigation and app architecture](https://developer.android.com/courses/android-basics-compose/unit-4)
+- [Guide to app architecture](https://developer.android.com/topic/architecture)
