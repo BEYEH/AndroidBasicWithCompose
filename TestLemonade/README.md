@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Test - Lemonade app
+# Test - Lemonade App
 
 <!-- omit in toc -->
 ## Table of contents

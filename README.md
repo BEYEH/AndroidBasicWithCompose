@@ -7,6 +7,7 @@
 - Android Basics with Compose
   - Unit 1. Unit 1: Your first Android app
   - Unit 2: Building app UI
+    - Test - Lemonade App
   - Unit 3: Display lists and use Material Design
   - Unit 4: Navigation and app architecture
   - Unit 5: Connect to the internet
