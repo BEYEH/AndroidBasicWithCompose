@@ -23,6 +23,13 @@
   
     <img src="../images/activity_lifecycle.png" alt="The Activity Lifecycle" width="300"/>
 
+| **情境** | **Lifecycle 呼叫順序**                      |
+| ------- | ------------------------------------------ |
+| 開啟 App | `onCreate()` → `onStart()` → `onResume()`  |
+| 切換 App | `onPause()` → `onStop()`                   |
+| 回到 App | `onRestart()` → `onStart()` → `onResume()` |
+| 關閉 App | `onPause()` → `onStop()` → `onDestroy()`   |
+
 ### Navigation in Jetpack Compose
 
 ### Adapt for different screen sizes
