@@ -28,7 +28,13 @@
     | 開啟 App | `onCreate()` → `onStart()` → `onResume()`  |
     | 切換 App | `onPause()` → `onStop()`                   |
     | 回到 App | `onRestart()` → `onStart()` → `onResume()` |
-    | 關閉 App | `onPause()` → `onStop()` → `onDestroy()`   |
+    | 關閉、旋轉 App | `onPause()` → `onStop()` → `onDestroy()`   |
+
+  - When the device or emulator rotates the screen, the system calls all the lifecycle callbacks to shut down the activity. Then, as the activity is re-created, the system calls all the lifecycle callbacks to start the activity.
+  - Composable functions have their own lifecycle that is independent of the Activity lifecycle. Its lifecycle is composed of the events: enters the Composition, recomposing 0 or more times, and then leaving the Composition.
+  - To let Compose track and trigger recomposition, state must be stored in a `State` or `MutableState` object. `State` is read-only, while `MutableState` allows both reading and writing.
+  - To instruct Compose to retain and reuse its value during recompositions, you need to declare it with the `remember` API.
+  - Use the `rememberSaveable` function to save values that you need if Android OS destroys and recreates the activity.
 
 ### Navigation in Jetpack Compose
 
