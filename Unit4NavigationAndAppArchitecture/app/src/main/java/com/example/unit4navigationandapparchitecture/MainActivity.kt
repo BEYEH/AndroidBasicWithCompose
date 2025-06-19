@@ -1,6 +1,7 @@
 package com.example.unit4navigationandapparchitecture
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -14,8 +15,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.unit4navigationandapparchitecture.ui.theme.Unit4NavigationAndAppArchitectureTheme
 
 class MainActivity : ComponentActivity() {
+    private val tagOfMainActivity = "MainActivity"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(tagOfMainActivity, "onCreate Called")
+
         enableEdgeToEdge()
         setContent {
             Unit4NavigationAndAppArchitectureTheme {
@@ -27,6 +32,36 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(tagOfMainActivity, "onStart Called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(tagOfMainActivity, "onRestart Called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(tagOfMainActivity, "onResume Called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(tagOfMainActivity, "onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(tagOfMainActivity, "onStop Called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(tagOfMainActivity, "onDestroy Called")
     }
 }
 
