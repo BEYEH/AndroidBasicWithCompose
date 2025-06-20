@@ -1,4 +1,18 @@
+<!-- omit in toc -->
+
 # AndroidBasicWithCompose
+
+<!-- omit in toc -->
+
+## Table of contents
+
+- [AndroidBasicWithCompose](#androidbasicwithcompose)
+  - [Table of contents](#table-of-contents)
+  - [Courses](#courses)
+    - [For beginners](#for-beginners)
+    - [For experienced Android developers](#for-experienced-android-developers)
+  - [My Note](#my-note)
+  - [Resources](#resources)
 
 ## Courses
 
@@ -22,6 +36,25 @@
 - Jetpack Compose for Android developers
 - Android app architecture
 
+## My Note
+
+- Format all the markdown files.
+  - Add settings in `.prettierrc`.
+
+    ```json
+    {
+      "printWidth": 80,
+      "proseWrap": "always"
+    }
+    ```
+  
+  - Excute the command.
+
+    ```bash
+    npx prettier --write "**/*.md"
+    ```
+
 ## Resources
 
 - [Android Developers Training courses](https://developer.android.com/courses)
+- [Download Node.js®](https://nodejs.org/en/download)
