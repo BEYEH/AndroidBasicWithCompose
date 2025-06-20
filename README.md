@@ -39,6 +39,7 @@
 ## My Note
 
 - Format all the markdown files.
+
   - Add settings in `.prettierrc`.
 
     ```json
@@ -47,7 +48,7 @@
       "proseWrap": "always"
     }
     ```
-  
+
   - Excute the command.
 
     ```bash

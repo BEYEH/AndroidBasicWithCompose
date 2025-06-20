@@ -6,11 +6,13 @@
 
 ## Table of contents
 
-- [Pathway](#pathway)
-  - [Architecture Components](#architecture-components)
-  - [Navigation in Jetpack Compose](#navigation-in-jetpack-compose)
-  - [Adapt for different screen sizes](#adapt-for-different-screen-sizes)
-- [Resources](#resources)
+- [Unit 4: Navigation and app architecture](#unit-4-navigation-and-app-architecture)
+  - [Table of contents](#table-of-contents)
+  - [Pathway](#pathway)
+    - [Architecture Components](#architecture-components)
+    - [Navigation in Jetpack Compose](#navigation-in-jetpack-compose)
+    - [Adapt for different screen sizes](#adapt-for-different-screen-sizes)
+  - [Resources](#resources)
 
 ## Pathway
 
@@ -71,6 +73,7 @@
       variables with `rememberSaveable`.
 
 - ViewModel and State in Compose
+
   - When apps grow, you should move data and logic away from composables. Learn
     about a robust way to design your app and preserve app data during
     configuration changes by taking advantage of the Android Jetpack library,
@@ -84,6 +87,50 @@
     change or other events. However, the data is lost if the activity is
     destroyed because of process death. The `ViewModel` only caches data through
     quick activity recreations.
+  - Common architectural principles
+    - Separation of concerns (SoC, 關注點分離)
+    - Drive UI from data models (由資料模型驅動使用者界面)
+    - Single source of truth (單一真實資料來源)
+    - Unidirectional Data Flow (UDF, 單向資料流動)
+  - `Models` are components responsible for handling the data for an app.
+    They're independent from the UI elements and app components in your app, so
+    they're unaffected by the app's lifecycle and associated concerns.
+  - Recommended app architecture
+
+    <img src="../images/app_architecture.png" alt="The App Architecture" width="300"/>
+
+    - `UI layer` displays the app data on the screen but is independent of the
+      data.
+    - `Domain layer` simplify and reuse the interactions between the UI and data
+      layers.
+    - `Data layer` stores, retrieves, and exposes the app data.
+
+    <img src="../images/ui_layer.png" alt="The App Architecture" width="300"/>
+
+    - `UI elements` render the data on the screen. You build these elements
+      using **Jetpack Compose**.
+    - `State holders` hold the data, expose it to the UI, and handle the app
+      logic. An example state holder is **ViewModel**.
+
+  - ViewModel
+
+    - The `ViewModel` component holds and exposes the state the UI consumes. The
+      UI state is application data transformed by `ViewModel`. `ViewModel` lets
+      your app follow the architecture principle of driving the UI from the
+      model.
+    - `ViewModel` stores the app-related data that isn't destroyed when the
+      activity is destroyed and recreated by the Android framework. Unlike the
+      activity instance, `ViewModel` objects are not destroyed. The app
+      automatically retains `ViewModel` objects during configuration changes so
+      that the data they hold is immediately available after the recomposition.
+
+    <img src="../images/pass_the_data.png" alt="Pass the data" width="250"/>
+
+    <img src="../images/display_the_data.png" alt="Display the data" width="400"/>
+
+    <img src="../images/verify_and_update_data.png" alt="Verify and update the data" width="400"/>
+
+    <img src="../images/update_data.png" alt="Update the data" width="300"/>
 
 ### Navigation in Jetpack Compose
 
