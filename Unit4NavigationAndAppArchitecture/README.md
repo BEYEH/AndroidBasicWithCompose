@@ -138,5 +138,6 @@
 
 ## Resources
 
+- [Android Basics with Compose - Training Course](https://developer.android.com/courses/android-basics-compose/course)
 - [Unit 4: Navigation and app architecture](https://developer.android.com/courses/android-basics-compose/unit-4)
 - [Guide to app architecture](https://developer.android.com/topic/architecture)
