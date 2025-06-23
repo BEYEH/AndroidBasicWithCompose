@@ -11,6 +11,10 @@
 
 ## App Screenshots
 
+<img src="../images/mvvm02_app_screenshot_01.png" alt="The App Architecture" width="130"/>
+
+<img src="../images/mvvm02_app_screenshot_02.png" alt="The App Architecture" width="300"/>
+
 ## Dependencies
 
 - AndroidBasicWithCompose/AndroidMvvm02Counter/app/build.gradle.kts
