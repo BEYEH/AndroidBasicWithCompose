@@ -70,12 +70,12 @@
     | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                             | ✘                   |
     | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                             | ✘ (manual required) |
 
-  - Jetpack Compose
-    - `Column`
-      - Show all data at once.
-    - `LazyColumn`
-      - Load and show data which are visible in the screen.
-      - Render dynamically. It can boost performance.
+- Jetpack Compose
+  - `Column`
+    - Show all data at once.
+  - `LazyColumn`
+    - Load and show data which are visible in the screen.
+    - Render dynamically. It can boost performance.
 
 ## Resources
 
