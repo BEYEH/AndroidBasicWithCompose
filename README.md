@@ -1,18 +1,15 @@
 <!-- omit in toc -->
-
 # AndroidBasicWithCompose
 
 <!-- omit in toc -->
-
 ## Table of contents
 
-- [AndroidBasicWithCompose](#androidbasicwithcompose)
-  - [Table of contents](#table-of-contents)
-  - [Courses](#courses)
-    - [For beginners](#for-beginners)
-    - [For experienced Android developers](#for-experienced-android-developers)
-  - [My Note](#my-note)
-  - [Resources](#resources)
+- [Courses](#courses)
+  - [For beginners](#for-beginners)
+  - [For experienced Android developers](#for-experienced-android-developers)
+- [My Practice](#my-practice)
+- [My Note](#my-note)
+- [Resources](#resources)
 
 ## Courses
 
@@ -35,6 +32,11 @@
 
 - Jetpack Compose for Android developers
 - Android app architecture
+
+## My Practice
+
+- Android MVVM 01 - Get Local Data
+- Android MVVM 02 - Counter
 
 ## My Note
 
