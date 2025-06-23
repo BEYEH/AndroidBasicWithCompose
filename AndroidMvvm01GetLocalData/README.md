@@ -41,4 +41,4 @@
 
 - YouTube
   - [Simple MVVM App 🔥 | Android | Jetpack Compose](https://www.youtube.com/watch?v=9eIhMFTs1Q8)
-  - [State and Jetpack Compose - Other supported types of state](https://developer.android.com/develop/ui/compose/state#use-other-types-of-state-in-jetpack-compose)
+- [State and Jetpack Compose - Other supported types of state](https://developer.android.com/develop/ui/compose/state#use-other-types-of-state-in-jetpack-compose)
