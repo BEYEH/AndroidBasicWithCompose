@@ -19,5 +19,7 @@ fun HomePage(modifier: Modifier = Modifier) {
         Button(onClick = {}) {
             Text(text = "Get Data")
         }
+        Text(text = "Name:")
+        Text(text = "Age:")
     }
 }
