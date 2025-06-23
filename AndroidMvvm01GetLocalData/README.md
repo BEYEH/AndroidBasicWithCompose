@@ -1,9 +1,7 @@
 <!-- omit in toc -->
-
 # Android MVVM 01 - Get Local Data
 
 <!-- omit in toc -->
-
 ## Table of contents
 
 - [App Architecture](#app-architecture)
@@ -14,6 +12,14 @@
 ## App Architecture
 
 <img src="../images/mvvm01_app_architecture.png" alt="The App Architecture" width="400"/>
+
+- View
+  - Use `file` to create `HomePage`.
+- ViewModel
+  - Use `class` to create `HomeViewModel`.
+- Model
+  - Use `data class` to create `UserData`.
+  - Use `class` to create `UserRepo`.
 
 ## Dependencies
 

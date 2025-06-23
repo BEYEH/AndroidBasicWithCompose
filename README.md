@@ -1,9 +1,7 @@
 <!-- omit in toc -->
-
 # AndroidBasicWithCompose
 
 <!-- omit in toc -->
-
 ## Table of contents
 
 - [Courses](#courses)
