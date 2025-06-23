@@ -1,9 +1,7 @@
 <!-- omit in toc -->
-
 # Unit 1 - Your first Android app
 
 <!-- omit in toc -->
-
 ## Table of contents
 
 - [Pathway](#pathway)
@@ -28,7 +26,7 @@
 
   ```kotlin
   // Funtion syntax with return type
-  fun funcName(fstParam: fstParamType, secParam: secParamType, ...): funcReturnType {
+  fun funcName(fstParam: fstParamType, secParam: secParamType, ...): funcReturnType{
       funcBody
       return statement
   }
