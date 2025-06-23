@@ -29,11 +29,12 @@
 - Create app.
 - Update ui.
   - Add basic ui components you need.
-- Create model.
-- Create viewmodel.
-- Create user repository to get datas from the API.
-- Call the repository method.
-- Call get user data and the data will reflected in the UI.
+- Create empty packages.
+  - view, viewmodel, model
+- In model, create user repository to get datas from the API.
+- In viewmodel, call the repository method.
+- In view, observe the data through viewmodel and reflect in the UI.
+- In MainActivity, use provider to create an instance for viewmodel.
 - Update ui.
   - Add progress bar till datas are loaded.
 
