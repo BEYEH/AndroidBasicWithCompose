@@ -1,7 +1,9 @@
 <!-- omit in toc -->
+
 # AndroidBasicWithCompose
 
 <!-- omit in toc -->
+
 ## Table of contents
 
 - [Courses](#courses)
@@ -41,7 +43,6 @@
 ## My Note
 
 - Format all the markdown files.
-
   - Add settings in `.prettierrc`.
 
     ```json
@@ -56,6 +57,20 @@
     ```bash
     npx prettier --write "**/*.md"
     ```
+
+- MVVM
+  - Resources of Model
+    - Local
+    - Remote (Retrofit, firebase or any other api)
+  - UI layer pipeline
+    - App data -> UI data -> UI elements -> UI events -> UI changes > repeat
+  - Manage state
+
+    | Method                   | Storage Location                           | Retention Duration                         | Survives Configuration Changes | Persistent Storage  |
+    | ------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------ | ------------------- |
+    | `remember`               | Memory (short-term)                        | Only while the Composable is active        | ✘                              | ✘                   |
+    | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                             | ✘                   |
+    | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                             | ✘ (manual required) |
 
 ## Resources
 

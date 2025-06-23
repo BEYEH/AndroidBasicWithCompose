@@ -19,7 +19,6 @@
 ### Architecture Components
 
 - Stages of the Activity lifecycle
-
   - In Android, an activity is the entry point for interacting with the user.
   - In the past, one activity would display one screen in an app.
   - With current best practices, one activity might display multiple screens by
@@ -73,7 +72,6 @@
       variables with `rememberSaveable`.
 
 - ViewModel and State in Compose
-
   - When apps grow, you should move data and logic away from composables. Learn
     about a robust way to design your app and preserve app data during
     configuration changes by taking advantage of the Android Jetpack library,
@@ -98,7 +96,6 @@
   - Recommended app architecture
 
     <img src="../images/app_architecture.png" alt="The App Architecture" width="300"/>
-
     - `UI layer` displays the app data on the screen but is independent of the
       data.
     - `Domain layer` simplify and reuse the interactions between the UI and data
@@ -106,14 +103,12 @@
     - `Data layer` stores, retrieves, and exposes the app data.
 
     <img src="../images/ui_layer.png" alt="The App Architecture" width="300"/>
-
     - `UI elements` render the data on the screen. You build these elements
       using **Jetpack Compose**.
     - `State holders` hold the data, expose it to the UI, and handle the app
       logic. An example state holder is **ViewModel**.
 
   - ViewModel
-
     - The `ViewModel` component holds and exposes the state the UI consumes. The
       UI state is application data transformed by `ViewModel`. `ViewModel` lets
       your app follow the architecture principle of driving the UI from the

@@ -1,7 +1,9 @@
 <!-- omit in toc -->
+
 # Android MVVM 01 - Get Local Data
 
 <!-- omit in toc -->
+
 ## Table of contents
 
 - [App Architecture](#app-architecture)

@@ -1,7 +1,9 @@
 <!-- omit in toc -->
+
 # Unit 1 - Your first Android app
 
 <!-- omit in toc -->
+
 ## Table of contents
 
 - [Pathway](#pathway)
@@ -62,7 +64,6 @@
   - Takes some input and generates what's shown on the screen.
   - Function name MUST be a `noun` and using Pascal case.
 - Annotations
-
   - Annotations are means of attaching extra information to code.
   - An annotation is applied by prefixing its name (the annotation) with the @
     character at the beginning of the declaration you are annotating.
@@ -95,7 +96,6 @@
   `Modifiers` tell a UI element how to lay out, display, or behave within its
   parent layout.
 - Accessing resources
-
   - An `R` class is an automatically generated class by Android that contains
     the IDs of all resources in the project.
 

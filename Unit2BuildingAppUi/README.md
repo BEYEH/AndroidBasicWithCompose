@@ -17,9 +17,7 @@
 ### Kotlin fundamentals
 
 - Use nullability in Kotlin
-
   - Types
-
     - Nullable types: variables that can hold null.
 
       ```kotlin

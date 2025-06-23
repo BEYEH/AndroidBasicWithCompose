@@ -1,7 +1,9 @@
 <!-- omit in toc -->
+
 # Android MVVM 03 - Input Field
 
 <!-- omit in toc -->
+
 ## Table of contents
 
 - [App Screenshots](#app-screenshots)
