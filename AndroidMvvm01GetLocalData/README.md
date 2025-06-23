@@ -17,6 +17,10 @@
 
 ## Pathway
 
+1. Update ui.
+2. Create model.
+3. Create viewmodel.
+
 ## Resources
 
 - YouTube
