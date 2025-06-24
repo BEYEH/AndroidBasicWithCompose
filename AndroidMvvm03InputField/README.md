@@ -1,12 +1,11 @@
 <!-- omit in toc -->
-
 # Android MVVM 03 - Input Field
 
 <!-- omit in toc -->
-
 ## Table of contents
 
 - [App Screenshots](#app-screenshots)
+- [App Architecture](#app-architecture)
 - [Dependencies](#dependencies)
 - [Pathway](#pathway)
 - [Resources](#resources)
@@ -16,6 +15,16 @@
 <img src="../images/mvvm03_app_screenshot_01.png" alt="The App Architecture" width="130"/>
 
 <img src="../images/mvvm03_app_screenshot_02.png" alt="The App Architecture" width="300"/>
+
+## App Architecture
+
+- MainActivity
+- View
+  - App
+- ViewModel
+  - AppViewModel
+- Model
+  - (Unnecessary in this app.)
 
 ## Dependencies
 
