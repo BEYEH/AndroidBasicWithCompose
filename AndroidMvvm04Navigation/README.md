@@ -16,6 +16,13 @@
 ## App Architecture
 
 - MainActivity
+- AppNav
+- Route
+- View
+  - ScreenA
+  - ScreenB
+- ViewModel
+  - AppViewModel
 
 ## Dependencies
 
