@@ -12,11 +12,10 @@ class AppViewModel : ViewModel() {
     private val _inputTextFieldValue2 = MutableLiveData(TextFieldValue(""))
     val inputTextFieldValue2: LiveData<TextFieldValue> = _inputTextFieldValue2
 
-    fun onTextFieldValueChanged(newValue: TextFieldValue) {
-        _inputTextFieldValue.value = newValue
-    }
-
-    fun onTextFieldValue2Changed(newValue: TextFieldValue) {
-        _inputTextFieldValue2.value = newValue
+    fun onTextFieldValueChanged(newValue: TextFieldValue, index: Int) {
+        when (index) {
+            1 -> _inputTextFieldValue.value = newValue
+            2 -> _inputTextFieldValue2.value = newValue
+        }
     }
 }

@@ -43,14 +43,18 @@ fun ScreenA(modifier: Modifier, navController: NavController, appViewModel: AppV
 
         OutlinedTextField(
             value = inputTextFieldValue,
-            onValueChange = { appViewModel.onTextFieldValueChanged(it) },
+            onValueChange = { appViewModel.onTextFieldValueChanged(it, 1) },
             label = { Text("TextFieldValue input") })
+
+        Spacer(modifier = Modifier.height(16.dp))
 
         Button(onClick = {
             navController.navigate(Route.screen_b)
         }) {
             Text(text = "Go to Screen B")
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
 
         Text(text = "Data: $inputTextFieldValue2")
     }

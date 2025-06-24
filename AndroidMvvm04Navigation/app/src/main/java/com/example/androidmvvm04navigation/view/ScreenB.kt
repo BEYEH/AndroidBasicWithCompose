@@ -16,7 +16,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.androidmvvm04navigation.Route
 import com.example.androidmvvm04navigation.viewmodel.AppViewModel
 
 @Composable
@@ -43,14 +42,18 @@ fun ScreenB(modifier: Modifier, navController: NavController, appViewModel: AppV
 
         OutlinedTextField(
             value = inputTextFieldValue2,
-            onValueChange = { appViewModel.onTextFieldValue2Changed(it) },
+            onValueChange = { appViewModel.onTextFieldValueChanged(it, 2) },
             label = { Text("TextFieldValue2 input") })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
         Button(onClick = {
-            navController.navigate(Route.screen_a)
+            navController.popBackStack()
         }) {
             Text(text = "Back to Screen A")
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
 
         Text(text = "Data: $inputTextFieldValue")
     }
