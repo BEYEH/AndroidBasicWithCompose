@@ -19,17 +19,11 @@
 
 ## Dependencies
 
-- Navigation composer
-
-  ```kts
-  val nav_version = "2.9.0"
-  ...
-  implementation("androidx.navigation:navigation-compose:$nav_version")
-  ```
-
   ```kts
   dependencies {
     ...
+    val nav_version = "2.9.0"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
     implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
   }
   ```
