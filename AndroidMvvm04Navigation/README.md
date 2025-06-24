@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Android MVVM 04 - Login Screen
+# Android MVVM 04 - Navigation
 
 <!-- omit in toc -->
 ## Table of contents
