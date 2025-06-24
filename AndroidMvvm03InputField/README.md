@@ -8,6 +8,7 @@
 - [App Architecture](#app-architecture)
 - [Dependencies](#dependencies)
 - [Pathway](#pathway)
+- [My Note](#my-note)
 - [Resources](#resources)
 
 ## App Screenshots
@@ -48,6 +49,15 @@
 - In viewmodel, call the repository method.
 - In view, observe the data through viewmodel and reflect in the UI.
 - In MainActivity, use provider to create an instance for viewmodel.
+
+## My Note
+
+| Feature                 | `String`             | `TextFieldValue`                       |
+| ----------------------- | -------------------- | -------------------------------------- |
+| Cursor position control | ❌ Not supported      | ✅ Supported                            |
+| Text selection          | ❌ Not supported      | ✅ Supported                            |
+| Input method support    | Basic support        | Full support (including composition)   |
+| Ease of use             | Easy (simple to use) | More complex (requires extra handling) |
 
 ## Resources
 
