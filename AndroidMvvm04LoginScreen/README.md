@@ -16,6 +16,10 @@
 ## App Architecture
 
 - MainActivity
+- View
+  - LoginScreen
+- ViewModel
+  - LoginViewModel
 
 ## Dependencies
 
