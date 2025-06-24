@@ -19,7 +19,11 @@ import androidx.navigation.NavController
 import com.example.androidmvvm04navigation.viewmodel.AppViewModel
 
 @Composable
-fun ScreenB(modifier: Modifier, navController: NavController, appViewModel: AppViewModel) {
+fun ScreenB(
+    modifier: Modifier = Modifier,
+    navController: NavController,
+    appViewModel: AppViewModel
+) {
     val inputTextFieldValueState =
         appViewModel.inputTextFieldValue.observeAsState(TextFieldValue(""))
     val inputTextFieldValue = inputTextFieldValueState.value
