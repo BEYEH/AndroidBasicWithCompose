@@ -47,7 +47,7 @@ fun ScreenB(
         OutlinedTextField(
             value = inputTextFieldValue2,
             onValueChange = { appViewModel.onTextFieldValueChanged(it, 2) },
-            label = { Text("TextFieldValue2 input") })
+            label = { Text("Input TextFieldValue2") })
 
         Spacer(modifier = Modifier.height(16.dp))
 
