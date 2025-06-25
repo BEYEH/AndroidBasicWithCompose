@@ -49,3 +49,4 @@
   - [How to Navigate in Jetpack Compose 🚀 | Android Studio | 2024](https://www.youtube.com/watch?v=wJKwsI5WUI4&list=PLgpnJydBcnPA5aNrlDxxKWSqAma7m3OIl&index=5)
 - Android
   - [Navigation](https://developer.android.com/guide/navigation)
+  - [Compose Runtime - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/compose-runtime?authuser=1#declaring_dependencies)

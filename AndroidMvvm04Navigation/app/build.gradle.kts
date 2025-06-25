@@ -58,7 +58,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     val nav_version = "2.9.0"
+    val runtime_version = "1.8.3"
+
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
-    implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
+    implementation("androidx.compose.runtime:runtime:$runtime_version")
+    implementation("androidx.compose.runtime:runtime-livedata:$runtime_version")
 }
