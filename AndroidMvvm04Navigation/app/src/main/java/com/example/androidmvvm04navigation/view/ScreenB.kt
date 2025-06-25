@@ -9,6 +9,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -24,13 +25,8 @@ fun ScreenB(
     navController: NavController,
     appViewModel: AppViewModel
 ) {
-    val inputTextFieldValueState =
-        appViewModel.inputTextFieldValue.observeAsState(TextFieldValue(""))
-    val inputTextFieldValue = inputTextFieldValueState.value
-
-    val inputTextFieldValue2State =
-        appViewModel.inputTextFieldValue2.observeAsState(TextFieldValue(""))
-    val inputTextFieldValue2 = inputTextFieldValue2State.value
+    val textFieldValue1 by appViewModel.inputTextFieldValue.observeAsState(TextFieldValue(""))
+    val textFieldValue2 by appViewModel.inputTextFieldValue2.observeAsState(TextFieldValue(""))
 
     Column(
         modifier = modifier.fillMaxSize(),
@@ -45,9 +41,10 @@ fun ScreenB(
         Spacer(modifier = Modifier.height(32.dp))
 
         OutlinedTextField(
-            value = inputTextFieldValue2,
-            onValueChange = { appViewModel.onTextFieldValueChanged(it, 2) },
-            label = { Text("Input TextFieldValue2") })
+            value = textFieldValue2,
+            onValueChange = { appViewModel.textFieldValue2 = it },
+            label = { Text("Input TextFieldValue2") }
+        )
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -59,6 +56,6 @@ fun ScreenB(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Text(text = "Data: $inputTextFieldValue")
+        Text(text = "Data: ${textFieldValue1.text}")
     }
 }
