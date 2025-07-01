@@ -20,3 +20,5 @@
 - Build & run the app.
 
 ## Resources
+
+- [Removed execute permission for app home directory](https://developer.android.com/about/versions/10/behavior-changes-10?authuser=1#execute-permission)
