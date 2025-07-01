@@ -12,4 +12,11 @@
 
 ## Pathway
 
+- Create app project.
+- Create lib in C language.
+- Create `CMakeLists.txt`.
+- Update `build.gradle.kts (module:app)`.
+- Call the function in the lib.
+- Build & run the app.
+
 ## Resources
