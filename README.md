@@ -10,6 +10,7 @@
 - [My Practice](#my-practice)
 - [My Note](#my-note)
 - [Resources](#resources)
+- [Appendix](#appendix)
 
 ## Courses
 
@@ -43,6 +44,7 @@
 ## My Note
 
 - Format all the markdown files.
+
   - Add settings in `.prettierrc`.
 
     ```json
@@ -59,6 +61,7 @@
     ```
 
 - MVVM
+
   - Resources of Model
     - Local
     - Remote (Retrofit, firebase or any other api)
@@ -69,8 +72,8 @@
     | Method                   | Storage Location                           | Retention Duration                         | Survives Configuration Changes | Persistent Storage  |
     | ------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------ | ------------------- |
     | `remember`               | Memory (short-term)                        | Only while the Composable is active        | ✘                              | ✘                   |
-    | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                             | ✘                   |
-    | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                             | ✘ (manual required) |
+    | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                              | ✘                   |
+    | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                              | ✘ (manual required) |
 
 - Jetpack Compose
   - `Column`
@@ -83,3 +86,10 @@
 
 - [Android Developers Training courses](https://developer.android.com/courses)
 - [Download Node.js®](https://nodejs.org/en/download)
+
+## Appendix
+
+- VSCode format file with shortcut:
+  - Windows: `shift` + `alt` + `f`
+  - Mac: `shift` + `option` + `f`
+  - Linux: `ctrl` + `shift` + `i`

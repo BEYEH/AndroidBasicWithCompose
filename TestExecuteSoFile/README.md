@@ -10,6 +10,11 @@
 
 ## Note
 
+- 從 Android 10 開始，不能值些執行 `.exe` 或一般的 `ELF` 執行檔，因為
+  `W^X policy` 防止在 writable 的目錄中執行檔案。
+  - 可行的作法：將第三方程式編譯成 `.so` (dynamically linked shared object
+    libraries, 簡稱 shared objects)，在透過 JNI 從 Kotlin 呼叫。
+
 ## Pathway
 
 - Create app project.
