@@ -24,10 +24,12 @@
 ## Pathway
 
 - Create app project.
+- Create folder.
 - Create the C program as a function, instead of a main program.
-- Use the Android NDK to compile program into a `.so` file.
-- Call the function from Kotlin using JNI.
-- Build, run the app. Print the string in the app.
+- Create JNI interface to connect Kotlin and C language.
+- Create `CMakeLists.txt`.
+- Update and sync the `build.gradle.kts (:app)`.
+- Build, run the app. Print the string in the logcat.
 
 ## Resources
 
