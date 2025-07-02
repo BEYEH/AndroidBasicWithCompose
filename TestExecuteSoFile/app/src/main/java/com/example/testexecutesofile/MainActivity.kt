@@ -13,13 +13,13 @@ import com.example.testexecutesofile.view.App
 
 class MainActivity : ComponentActivity() {
 
-    external fun getMsg(): String
-
     companion object {
         init {
-            System.loadLibrary("get-lib")
+            System.loadLibrary("get-lib") // Load libget-lib.so
         }
     }
+
+    external fun getMsg(): String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
