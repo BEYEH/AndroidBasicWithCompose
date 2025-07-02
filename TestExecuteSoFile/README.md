@@ -29,7 +29,7 @@
 - Create JNI interface to connect Kotlin and C language.
 - Create `CMakeLists.txt`.
 - Update and sync the `build.gradle.kts (:app)`.
-- Build, run the app. Print the string in the logcat.
+- Build, run the app. Get message in the text component.
 
 ## Resources
 
