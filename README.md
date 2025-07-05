@@ -7,6 +7,8 @@
 - [Courses](#courses)
   - [For beginners](#for-beginners)
   - [For experienced Android developers](#for-experienced-android-developers)
+- [App Architecture](#app-architecture)
+- [Dependencies](#dependencies)
 - [My Practice](#my-practice)
 - [My Note](#my-note)
 - [Resources](#resources)
@@ -34,6 +36,41 @@
 - Jetpack Compose for Android developers
 - Android app architecture
 
+## App Architecture
+
+- MVVM
+  - MainActivity
+    - Use `ViewModelProvider`.
+  - View
+    - App
+      - Use `observeAsState`.
+  - ViewModel
+    - AppViewModel
+      - Use `MutableLiveData`.
+      - Use `LiveData`.
+  - Model
+    - Resources of data
+      - Local
+      - Remote (Retrofit, firebase or any other api)
+
+## Dependencies
+
+``` kts
+// build.gradle.kts (:app)
+dependencies {
+  ...
+  // Navigation
+  def nav_version = "2.9.1"
+  implementation "androidx.navigation:navigation-compose:$nav_version"
+
+  // Compose Runtime
+  def rt_version = "1.8.3"
+  implementation "androidx.compose.runtime:runtime:$rt_version"
+  implementation "androidx.compose.runtime:runtime-livedata:$rt_version"
+  implementation "androidx.compose.runtime:runtime-rxjava2:$rt_version"
+}
+```
+
 ## My Practice
 
 - MVVM
@@ -48,30 +85,15 @@
 
 ## My Note
 
-- MVVM
-
-  - MainActivity
-    - Use `ViewModelProvider`.
-  - View
-    - App
-      - Use `observeAsState`.
-  - ViewModel
-    - AppViewModel
-      - Use `MutableLiveData`.
-      - Use `LiveData`.
-  - Model
-    - Resources of data
-      - Local
-      - Remote (Retrofit, firebase or any other api)
 - UI layer pipeline
   - App data -> UI data -> UI elements -> UI events -> UI changes > repeat
 - Manage state
-
-  | Method                   | Storage Location                           | Retention Duration                         | Survives Configuration Changes | Persistent Storage  |
-  | ------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------ | ------------------- |
-  | `remember`               | Memory (short-term)                        | Only while the Composable is active        | ✘                              | ✘                   |
-  | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                              | ✘                   |
-  | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                              | ✘ (manual required) |
+  - remember
+    - persist state on recomposition
+  - rememberSaveable
+    - persist even on configuration changes
+  - ViewModel & Livedata
+    - host the state for reusable and testable
 
 - Jetpack Compose
   - `Column`
@@ -86,6 +108,9 @@
 - [Download Node.js®](https://nodejs.org/en/download)
 - YouTube
   - [Easy Tuto - Jetpack Compose](https://youtube.com/playlist?list=PLgpnJydBcnPA5aNrlDxxKWSqAma7m3OIl&si=7rFhu96CfRllxo5E)
+- Android Jetpack Libraries
+  - [Compose Runtime - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/compose-runtime#declaring_dependencies)
+  - [Navigation - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/navigation#declaring_dependencies)
 
 ## Appendix
 
