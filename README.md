@@ -60,14 +60,14 @@
 dependencies {
   ...
   // Navigation
-  def nav_version = "2.9.1"
-  implementation "androidx.navigation:navigation-compose:$nav_version"
+  val nav_version = "2.9.1"
+  implementation ("androidx.navigation:navigation-compose:$nav_version")
 
   // Compose Runtime
-  def rt_version = "1.8.3"
-  implementation "androidx.compose.runtime:runtime:$rt_version"
-  implementation "androidx.compose.runtime:runtime-livedata:$rt_version"
-  implementation "androidx.compose.runtime:runtime-rxjava2:$rt_version"
+  val rt_version = "1.8.3"
+  implementation ("androidx.compose.runtime:runtime:$rt_version")
+  implementation ("androidx.compose.runtime:runtime-livedata:$rt_version")
+  implementation ("androidx.compose.runtime:runtime-rxjava2:$rt_version")
 }
 ```
 
