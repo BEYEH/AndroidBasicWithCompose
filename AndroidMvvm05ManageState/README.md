@@ -22,9 +22,9 @@
 dependencies {
   ...
   // Compose Runtime
-  def rt_version = "1.8.3"
-  implementation "androidx.compose.runtime:runtime:$rt_version"
-  implementation "androidx.compose.runtime:runtime-livedata:$rt_version"
+  val rt_version = "1.8.3"
+  implementation ("androidx.compose.runtime:runtime:$rt_version")
+  implementation ("androidx.compose.runtime:runtime-livedata:$rt_version")
 }
 ```
 
