@@ -84,6 +84,8 @@
 
 - [Android Developers Training courses](https://developer.android.com/courses)
 - [Download Node.js®](https://nodejs.org/en/download)
+- YouTube
+  - [Easy Tuto - Jetpack Compose](https://youtube.com/playlist?list=PLgpnJydBcnPA5aNrlDxxKWSqAma7m3OIl&si=7rFhu96CfRllxo5E)
 
 ## Appendix
 
