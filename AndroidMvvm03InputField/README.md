@@ -20,10 +20,14 @@
 ## App Architecture
 
 - MainActivity
+  - Use `ViewModelProvider`.
 - View
   - App
+    - Use `observeAsState`.
 - ViewModel
   - AppViewModel
+    - Use `MutableLiveData`.
+    - Use `LiveData`.
 - Model
   - (Unnecessary in this app.)
 

@@ -36,44 +36,42 @@
 
 ## My Practice
 
-- Android MVVM 01 - Get Local Data
-- Android MVVM 02 - Counter
-- Android MVVM 03 - Input Field
-- Android MVVM 04 - Login Screen
+- MVVM
+  - Android MVVM 01 - Get Local Data
+  - Android MVVM 02 - Counter
+  - Android MVVM 03 - Input Field
+  - Android MVVM 04 - Navigation
+  - Android MVVM 05 - Login Screen
+- Other
+  - Test - Execute Binary File
+  - Test - Execute .so File
 
 ## My Note
 
-- Format all the markdown files.
-
-  - Add settings in `.prettierrc`.
-
-    ```json
-    {
-      "printWidth": 80,
-      "proseWrap": "always"
-    }
-    ```
-
-  - Excute the command.
-
-    ```bash
-    npx prettier --write "**/*.md"
-    ```
-
 - MVVM
 
-  - Resources of Model
-    - Local
-    - Remote (Retrofit, firebase or any other api)
-  - UI layer pipeline
-    - App data -> UI data -> UI elements -> UI events -> UI changes > repeat
-  - Manage state
+  - MainActivity
+    - Use `ViewModelProvider`.
+  - View
+    - App
+      - Use `observeAsState`.
+  - ViewModel
+    - AppViewModel
+      - Use `MutableLiveData`.
+      - Use `LiveData`.
+  - Model
+    - Resources of data
+      - Local
+      - Remote (Retrofit, firebase or any other api)
+- UI layer pipeline
+  - App data -> UI data -> UI elements -> UI events -> UI changes > repeat
+- Manage state
 
-    | Method                   | Storage Location                           | Retention Duration                         | Survives Configuration Changes | Persistent Storage  |
-    | ------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------ | ------------------- |
-    | `remember`               | Memory (short-term)                        | Only while the Composable is active        | ✘                              | ✘                   |
-    | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                              | ✘                   |
-    | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                              | ✘ (manual required) |
+  | Method                   | Storage Location                           | Retention Duration                         | Survives Configuration Changes | Persistent Storage  |
+  | ------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------ | ------------------- |
+  | `remember`               | Memory (short-term)                        | Only while the Composable is active        | ✘                              | ✘                   |
+  | `rememberSaveable`       | Memory + Bundle (e.g., SavedInstanceState) | Automatically saved/restored by the system | ✔                              | ✘                   |
+  | `ViewModel` + `LiveData` | Memory (longer-lived)                      | As long as the Activity/Fragment is alive  | ✔                              | ✘ (manual required) |
 
 - Jetpack Compose
   - `Column`
@@ -93,3 +91,19 @@
   - Windows: `shift` + `alt` + `f`
   - Mac: `shift` + `option` + `f`
   - Linux: `ctrl` + `shift` + `i`
+- Format all the markdown files.
+
+  - Add settings in `.prettierrc`.
+
+    ```json
+    {
+      "printWidth": 80,
+      "proseWrap": "always"
+    }
+    ```
+
+  - Excute the command.
+
+    ```bash
+    npx prettier --write "**/*.md"
+    ```
