@@ -78,7 +78,7 @@ dependencies {
   - Android MVVM 02 - Counter
   - Android MVVM 03 - Input Field
   - Android MVVM 04 - Navigation
-  - Android MVVM 05 - Login Screen
+  - Android MVVM 05 - Manage State
 - Other
   - Test - Execute Binary File
   - Test - Execute .so File
