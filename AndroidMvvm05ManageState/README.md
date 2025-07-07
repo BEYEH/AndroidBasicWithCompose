@@ -13,6 +13,10 @@
 
 ## App Sreeenshots
 
+<img src="../images/mvvm05_app_screenshot_01.png" alt="The App Architecture" width="130"/>
+
+<img src="../images/mvvm05_app_screenshot_02.png" alt="The App Architecture" width="300"/>
+
 ## App Architecture
 
 ## Dependencies
