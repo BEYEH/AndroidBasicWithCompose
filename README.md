@@ -105,13 +105,22 @@ dependencies {
 
 ## Resources
 
-- [Android Developers Training courses](https://developer.android.com/courses)
-- [Download Node.js®](https://nodejs.org/en/download)
+- [Android Developers](https://developer.android.com/)
+  - [Training Courses](https://developer.android.com/courses)
+    - For beginners
+      - [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)
+    - For experienced Android developers
+      - [Jetpack Compose for Android developers](https://developer.android.com/courses/jetpack-compose/course)
+      - [Android app architecture](https://developer.android.com/courses/pathways/android-architecture)
+      - [Accessibility](https://developer.android.com/courses/pathways/make-your-android-app-accessible)
+  - [Jetpack](https://developer.android.com/jetpack)
+    - [Libraries](https://developer.android.com/jetpack/androidx/explorer)
+      - [Compose Runtime - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/compose-runtime#declaring_dependencies)
+      - [Navigation - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/navigation#declaring_dependencies)
+- [Kotlin](https://kotlinlang.org/)
+  - [Playground](https://play.kotlinlang.org/)
 - YouTube
   - [Easy Tuto - Jetpack Compose](https://youtube.com/playlist?list=PLgpnJydBcnPA5aNrlDxxKWSqAma7m3OIl&si=7rFhu96CfRllxo5E)
-- Android Jetpack Libraries
-  - [Compose Runtime - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/compose-runtime#declaring_dependencies)
-  - [Navigation - Declaring dependencies](https://developer.android.com/jetpack/androidx/releases/navigation#declaring_dependencies)
 
 ## Appendix
 
@@ -135,3 +144,16 @@ dependencies {
     ```bash
     npx prettier --write "**/*.md"
     ```
+
+- Measure the execution time of code block.
+
+  ``` kt
+  import kotlin.time.measureTime
+
+  fun main() {
+      val duration = measureTime {
+          Thread.sleep(1000)
+      }
+      println("Code execution took: $duration")
+  }
+  ```
