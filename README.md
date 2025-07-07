@@ -46,8 +46,7 @@
       - Use `observeAsState`.
   - ViewModel
     - AppViewModel
-      - Use `MutableLiveData`.
-      - Use `LiveData`.
+      - Use `MutableLiveData` + `LiveData`.
   - Model
     - Resources of data
       - Local
