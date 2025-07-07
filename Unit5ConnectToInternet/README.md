@@ -1,15 +1,19 @@
 <!-- omit in toc -->
+
 # Unit 5 - Connect to the internet
 
 <!-- omit in toc -->
+
 ## Table of contents
 
-- [App Screenshots](#app-screenshots)
-- [App Architecture](#app-architecture)
-- [Dependencies](#dependencies)
-- [Pathway](#pathway)
-- [Resources](#resources)
-- [Appendix](#appendix)
+- [Unit 5 - Connect to the internet](#unit-5---connect-to-the-internet)
+  - [Table of contents](#table-of-contents)
+  - [App Screenshots](#app-screenshots)
+  - [App Architecture](#app-architecture)
+  - [Dependencies](#dependencies)
+  - [Pathway](#pathway)
+  - [Resources](#resources)
+  - [Appendix](#appendix)
 
 ## App Screenshots
 
@@ -24,6 +28,14 @@
     time.
     - To do work concurrently in your app, you will be using Kotlin
       `coroutines`. Coroutines make it easier to write `asynchronous` code.
+    - Suspend function 'delay' should be called only from a coroutine or another
+      suspend function.
+    - `runBlocking()` is synchronous. It runs an event loop, which can handle
+      multiple tasks at once by continuing each task where it left off when it's
+      ready to be resumed.
+    - Android has privided an event loop for app to process resumed work. You do
+      not need to call `runBlocking()`. Only use `runBlocking()` within a
+      `main()` function.
 - Load and display images from the internet
 
 ## Resources
