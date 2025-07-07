@@ -12,6 +12,7 @@
   - [App Architecture](#app-architecture)
   - [Dependencies](#dependencies)
   - [Pathway](#pathway)
+  - [My Note](#my-note)
   - [Resources](#resources)
   - [Appendix](#appendix)
 
@@ -37,6 +38,14 @@
       not need to call `runBlocking()`. Only use `runBlocking()` within a
       `main()` function.
 - Load and display images from the internet
+
+## My Note
+
+- Concept
+  - Concurrency (併發)
+  - Asynchronous (非同步)
+- Technique
+  - Kotlin coroutines
 
 ## Resources
 
