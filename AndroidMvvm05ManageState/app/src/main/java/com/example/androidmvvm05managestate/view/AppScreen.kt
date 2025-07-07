@@ -25,7 +25,10 @@ import androidx.compose.ui.unit.sp
 import com.example.androidmvvm05managestate.viewmodel.AppViewModel
 
 @Composable
-fun AppScreen(modifier: Modifier = Modifier, appViewModel: AppViewModel) {
+fun AppScreen(
+    modifier: Modifier = Modifier,
+    appViewModel: AppViewModel,
+) {
     var email by remember { mutableStateOf("") }
     var emailSaveable by rememberSaveable { mutableStateOf("") }
     val emailLiveData by appViewModel.email.observeAsState(initial = "")
@@ -72,7 +75,11 @@ fun AppScreen(modifier: Modifier = Modifier, appViewModel: AppViewModel) {
 }
 
 @Composable
-fun AppContent(title: String, email: String, onEmailChange: (String) -> Unit) {
+fun AppContent(
+    title: String,
+    email: String,
+    onEmailChange: (String) -> Unit
+) {
     Spacer(Modifier.height(10.dp))
     Text(text = title)
     OutlinedTextField(

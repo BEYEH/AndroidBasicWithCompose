@@ -25,7 +25,10 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                 ) { innerPadding ->
-                    AppScreen(modifier = Modifier.padding(innerPadding), appViewModel)
+                    AppScreen(
+                        modifier = Modifier.padding(innerPadding),
+                        appViewModel
+                    )
                 }
             }
         }
