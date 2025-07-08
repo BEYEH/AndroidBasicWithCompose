@@ -95,7 +95,6 @@ dependencies {
     - persist even on configuration changes
   - ViewModel & Livedata
     - host the state for reusable and testable
-
 - Jetpack Compose
   - `Column`
     - Show all data at once.
@@ -156,5 +155,18 @@ dependencies {
           Thread.sleep(1000)
       }
       println("Code execution took: $duration")
+  }
+  ```
+
+- Try-catch exceptions
+
+  ``` kt
+  try {
+      // Code that may throw an exception
+      val data = api.fetchData()
+  } catch (e: IOException) {
+      Log.e("Network", "Network error: ${e.message}")
+  } catch (e: Exception) {
+      Log.e("General", "Unknown error: ${e.message}")
   }
   ```
