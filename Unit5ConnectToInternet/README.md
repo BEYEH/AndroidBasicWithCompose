@@ -68,6 +68,10 @@
     - runBlocking + launch + suspend
     - runBlocking + Deferred + async + suspend
     - runBlocking + coroutineScope + suspend + async
+- Common HTTP Status Codes
+  - 200~299: Success
+  - 400~499: Client Errors
+  - 500~599: Server Errors
 
 ## Resources
 
