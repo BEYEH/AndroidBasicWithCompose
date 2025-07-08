@@ -10,7 +10,12 @@ import androidx.compose.ui.Modifier
 import com.example.unit5connecttointernet.viewmodel.AppViewModel
 
 @Composable
-fun AppScreen(modifier: Modifier = Modifier, appViewModel: AppViewModel) {
+fun App(appViewModel: AppViewModel) {
+    AppScreen()
+}
+
+@Composable
+private fun AppScreen(modifier: Modifier = Modifier){
     Column(
         modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,

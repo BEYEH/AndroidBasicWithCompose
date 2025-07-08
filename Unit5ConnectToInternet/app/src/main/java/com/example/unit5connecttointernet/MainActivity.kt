@@ -4,10 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModelProvider
 import com.example.unit5connecttointernet.ui.theme.Unit5ConnectToInternetTheme
-import com.example.unit5connecttointernet.view.AppScreen
+import com.example.unit5connecttointernet.view.App
 import com.example.unit5connecttointernet.viewmodel.AppViewModel
 
 class MainActivity : ComponentActivity() {
@@ -19,8 +18,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             Unit5ConnectToInternetTheme {
-                AppScreen(
-                    modifier = Modifier,
+                App(
                     appViewModel
                 )
             }
