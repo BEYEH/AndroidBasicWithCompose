@@ -75,7 +75,7 @@ dependencies {
   // Retrofit
   val rf_version = "3.0.0"
   implementation("com.squareup.retrofit2:retrofit:$rf_version")
-  implementation("com.squareup.retrofit2:converter-scalars:$rf_version")
+  implementation("com.squareup.retrofit2:converter-gson:$rf_version")
 }
 ```
 
@@ -128,6 +128,7 @@ dependencies {
   - [Playground](https://play.kotlinlang.org/)
 - GitHub
   - [Google Developer Training](https://github.com/google-developer-training)
+  - [Square / Retrofit](https://github.com/square/retrofit)
 - YouTube
   - [Easy Tuto - Jetpack Compose](https://youtube.com/playlist?list=PLgpnJydBcnPA5aNrlDxxKWSqAma7m3OIl&si=7rFhu96CfRllxo5E)
 
