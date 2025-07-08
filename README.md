@@ -71,6 +71,11 @@ dependencies {
   implementation ("androidx.compose.runtime:runtime:$rt_version")
   implementation ("androidx.compose.runtime:runtime-livedata:$rt_version")
   implementation ("androidx.compose.runtime:runtime-rxjava2:$rt_version")
+
+  // Retrofit
+  val rf_version = "3.0.0"
+  implementation("com.squareup.retrofit2:retrofit:$rf_version")
+  implementation("com.squareup.retrofit2:converter-scalars:$rf_version")
 }
 ```
 

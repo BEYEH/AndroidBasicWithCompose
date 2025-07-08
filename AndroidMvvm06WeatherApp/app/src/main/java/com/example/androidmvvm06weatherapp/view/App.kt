@@ -24,11 +24,11 @@ import com.example.androidmvvm06weatherapp.viewmodel.AppViewModel
 
 @Composable
 fun App(appViewModel: AppViewModel) {
-    AppScreen()
+    AppScreen(appViewModel)
 }
 
 @Composable
-fun AppScreen() {
+fun AppScreen(appViewModel: AppViewModel) {
     var city by remember { mutableStateOf("") }
 
     Column(
@@ -48,7 +48,7 @@ fun AppScreen() {
             )
 
             IconButton(onClick = {
-                /*TODO*/
+                appViewModel.getData(city)
             }) {
                 Icon(
                     imageVector = Icons.Default.Search,
