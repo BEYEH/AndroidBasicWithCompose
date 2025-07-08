@@ -29,6 +29,7 @@
   - Unit 5: Connect to the internet
     - Pathway 1: Get data from the internet
       - Example - Race Tracker
+      - Example - Mars Photos
     - Pathway 2:  Load and display images from the internet
   - Unit 6: Data persistence
   - Unit 7: WorkManager
@@ -120,6 +121,8 @@ dependencies {
     - [Compose Roadmap](https://developer.android.com/jetpack/androidx/compose-roadmap)
 - [Kotlin](https://kotlinlang.org/)
   - [Playground](https://play.kotlinlang.org/)
+- GitHub
+  - [Google Developer Training](https://github.com/google-developer-training)
 - YouTube
   - [Easy Tuto - Jetpack Compose](https://youtube.com/playlist?list=PLgpnJydBcnPA5aNrlDxxKWSqAma7m3OIl&si=7rFhu96CfRllxo5E)
 
