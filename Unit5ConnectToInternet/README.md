@@ -43,9 +43,19 @@
 
 - Concept
   - Concurrency (併發)
+    - Structured concurrency
   - Asynchronous (非同步)
-- Technique
+  - Parallel decomposition (並行分解)
+- Techniques
   - Kotlin coroutines
+    - Synchronous code
+      - delay
+      - runBlocking + delay
+      - runBlocking + suspend + delay
+    - Asynchronous code
+      - runBlocking + launch + suspend
+      - runBlocking + Deferred + async + suspend
+      - runBlocking + coroutineScope + suspend + async
 
 ## Resources
 
