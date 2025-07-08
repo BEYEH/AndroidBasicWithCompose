@@ -41,21 +41,33 @@
 
 ## My Note
 
+- Code Type
+  - Synchronous
+  - Asynchronous
 - Concept
   - Concurrency (併發)
     - Structured concurrency
   - Asynchronous (非同步)
   - Parallel decomposition (並行分解)
+- Kotlin coroutine concepts
+  - Job
+    - Job hierarchy
+  - CoroutineScope
+    - In Kotlin playground
+      - runBlocking
+      - coroutineScope
+    - In Android apps
+      - Activity (lifecycleScope)
+      - ViewModel (viewModelScope)
 - Techniques
-  - Kotlin coroutines
-    - Synchronous code
-      - delay
-      - runBlocking + delay
-      - runBlocking + suspend + delay
-    - Asynchronous code
-      - runBlocking + launch + suspend
-      - runBlocking + Deferred + async + suspend
-      - runBlocking + coroutineScope + suspend + async
+  - Synchronous code
+    - delay
+    - runBlocking + delay
+    - runBlocking + suspend + delay
+  - Asynchronous code
+    - runBlocking + launch + suspend
+    - runBlocking + Deferred + async + suspend
+    - runBlocking + coroutineScope + suspend + async
 
 ## Resources
 
