@@ -34,7 +34,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil3.compose.AsyncImage
+import coil.compose.AsyncImage
 import com.example.androidmvvm06weatherapp.api.NetworkResponse
 import com.example.androidmvvm06weatherapp.api.WeatherModel
 import com.example.androidmvvm06weatherapp.viewmodel.AppViewModel

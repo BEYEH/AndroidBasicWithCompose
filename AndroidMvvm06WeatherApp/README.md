@@ -32,6 +32,10 @@
     implementation("com.squareup.retrofit2:retrofit:$rf_version")
     // Retrofit with Gson Converter
     implementation("com.squareup.retrofit2:converter-gson:$rf_version")
+
+    // Coil
+    val coil_version = "2.7.0"
+    implementation("io.coil-kt:coil-compose:$coil_version")
   }
   
   ```
@@ -67,5 +71,7 @@
   - [coil-kt / COIL](https://github.com/coil-kt/coil)
 - Retrofit
   - [Configuration - Converters](https://square.github.io/retrofit/configuration/#converters)
-- Coil
-  - [Quick Start](https://coil-kt.github.io/coil/#quick-start)
+- Android
+  - [Load an image from the internet](https://developer.android.com/develop/ui/compose/graphics/images/loading)
+- maven central repository
+  - [coil-compose](https://central.sonatype.com/artifact/io.coil-kt/coil-compose/overview)
