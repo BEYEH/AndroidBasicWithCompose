@@ -73,3 +73,4 @@
   - [Configuration - Converters](https://square.github.io/retrofit/configuration/#converters)
 - Android
   - [Load an image using Coil](https://developer.android.com/develop/ui/compose/quick-guides/content/load-images#load_an_image_using_coil)
+- [Weather API](https://www.weatherapi.com/)
