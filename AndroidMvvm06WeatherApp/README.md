@@ -7,6 +7,7 @@
 - [App Screenshots](#app-screenshots)
 - [App Architecture](#app-architecture)
 - [Dependencies](#dependencies)
+- [Plugins](#plugins)
 - [My Note](#my-note)
 - [Resources](#resources)
 
@@ -16,7 +17,7 @@
 
 ## Dependencies
 
-``` kts
+```kts
 // Compose Runtime
 val rt_version = "1.8.3"
 implementation ("androidx.compose.runtime:runtime:$rt_version")
@@ -30,7 +31,16 @@ implementation("com.squareup.retrofit2:retrofit:$rf_version")
 implementation("com.squareup.retrofit2:converter-gson:$rf_version")
 ```
 
+## Plugins
+
+- JSON To Kotlin Class (JsonToKotlinClass)
+
 ## My Note
+
+- Use plugin `JsonToKotlinClass` to convert JSON to kotlin class.
+  - Paste the `response body` from WeatherApi.com into
+    `Kotlin data class File from JSON`, then it will generate class
+    automatically.
 
 ## Resources
 
