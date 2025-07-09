@@ -72,6 +72,4 @@
 - Retrofit
   - [Configuration - Converters](https://square.github.io/retrofit/configuration/#converters)
 - Android
-  - [Load an image from the internet](https://developer.android.com/develop/ui/compose/graphics/images/loading)
-- maven central repository
-  - [coil-compose](https://central.sonatype.com/artifact/io.coil-kt/coil-compose/overview)
+  - [Load an image using Coil](https://developer.android.com/develop/ui/compose/quick-guides/content/load-images#load_an_image_using_coil)
