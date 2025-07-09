@@ -64,5 +64,8 @@
 - GitHub
   - [Square / Retrofit](https://github.com/square/retrofit)
   - [Google / Gson](https://github.com/google/gson)
+  - [coil-kt / COIL](https://github.com/coil-kt/coil)
 - Retrofit
   - [Configuration - Converters](https://square.github.io/retrofit/configuration/#converters)
+- Coil
+  - [Quick Start](https://coil-kt.github.io/coil/#quick-start)
