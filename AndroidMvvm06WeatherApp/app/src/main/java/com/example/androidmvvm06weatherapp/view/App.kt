@@ -1,5 +1,6 @@
 package com.example.androidmvvm06weatherapp.view
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -27,10 +29,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
 import com.example.androidmvvm06weatherapp.api.NetworkResponse
 import com.example.androidmvvm06weatherapp.api.WeatherModel
 import com.example.androidmvvm06weatherapp.viewmodel.AppViewModel
@@ -44,6 +48,7 @@ fun App(appViewModel: AppViewModel) {
 fun AppScreen(appViewModel: AppViewModel) {
     var city by remember { mutableStateOf("") }
     val weatherResult = appViewModel.weatherResult.observeAsState()
+    val keyboardController = LocalSoftwareKeyboardController.current
 
     Column(
         modifier = Modifier
@@ -67,6 +72,7 @@ fun AppScreen(appViewModel: AppViewModel) {
 
             IconButton(onClick = {
                 appViewModel.getData(city)
+                keyboardController?.hide()
             }) {
                 Icon(
                     imageVector = Icons.Default.Search,
@@ -125,6 +131,61 @@ fun WeatherDetails(data: WeatherModel) {
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
         )
+        Log.d("AsyncImage", "https:${data.current.condition.icon}")
+        AsyncImage(
+            modifier = Modifier.size(160.dp),
+            model = "https:${data.current.condition.icon}"
+                .replace(
+                    "64x64",
+                    "128x128"
+                ),
+            contentDescription = "Condition icon"
+        )
+        Text(
+            text = data.current.condition.text,
+            fontSize = 20.sp,
+            textAlign = TextAlign.Center,
+            color = Color.Gray
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+        Card {
+            Column(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ) {
+                    WeatherKeyVal("Humidity", data.current.humidity.toString())
+                    WeatherKeyVal("Wind Speed","${data.current.wind_kph} km/h")
+                }
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ) {
+                    WeatherKeyVal("UV", data.current.uv.toString())
+                    WeatherKeyVal("Participation","${data.current.precip_mm} mm")
+                }
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ) {
+                    WeatherKeyVal("Local Time",data.location.localtime.split(" ")[1])
+                    WeatherKeyVal("Local Date",data.location.localtime.split(" ")[0])
+                }
+            }
+        }
 
+    }
+}
+
+@Composable
+fun WeatherKeyVal(key : String, value : String) {
+    Column(
+        modifier = Modifier.padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = value, fontSize = 24.sp, fontWeight = FontWeight.Bold)
+        Text(text = key, fontWeight = FontWeight.SemiBold, color = Color.Gray)
     }
 }
