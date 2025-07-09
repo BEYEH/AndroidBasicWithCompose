@@ -68,4 +68,8 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:$rf_version")
     // Retrofit with Gson Converter
     implementation("com.squareup.retrofit2:converter-gson:$rf_version")
+
+    // Coil
+    val coil_version = "3.2.0"
+    implementation("io.coil-kt.coil3:coil-compose:$coil_version")
 }
