@@ -6,8 +6,7 @@
 
 - [App Screenshots](#app-screenshots)
 - [App Architecture](#app-architecture)
-- [Dependencies](#dependencies)
-- [Plugins](#plugins)
+- [Tools](#tools)
 - [My Note](#my-note)
 - [Resources](#resources)
 
@@ -15,25 +14,41 @@
 
 ## App Architecture
 
-## Dependencies
+## Tools
 
-```kts
-// Compose Runtime
-val rt_version = "1.8.3"
-implementation ("androidx.compose.runtime:runtime:$rt_version")
-implementation ("androidx.compose.runtime:runtime-livedata:$rt_version")
-implementation ("androidx.compose.runtime:runtime-rxjava2:$rt_version")
+- Dependencies
 
-// Retrofit
-val rf_version = "3.0.0"
-implementation("com.squareup.retrofit2:retrofit:$rf_version")
-// Retrofit with Gson Converter
-implementation("com.squareup.retrofit2:converter-gson:$rf_version")
-```
+  ```kts
+  dependencies {
+    ...
+    // Compose Runtime
+    val rt_version = "1.8.3"
+    implementation ("androidx.compose.runtime:runtime:$rt_version")
+    implementation ("androidx.compose.runtime:runtime-livedata:$rt_version")
+    implementation ("androidx.compose.runtime:runtime-rxjava2:$rt_version")
 
-## Plugins
+    // Retrofit
+    val rf_version = "3.0.0"
+    implementation("com.squareup.retrofit2:retrofit:$rf_version")
+    // Retrofit with Gson Converter
+    implementation("com.squareup.retrofit2:converter-gson:$rf_version")
+  }
+  
+  ```
 
-- JSON To Kotlin Class (JsonToKotlinClass)
+- Plugins
+  - JSON To Kotlin Class (JsonToKotlinClass)
+
+- Permission
+
+  ``` xml
+  <manifest ...>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application ... >
+      ...
+    </application>
+  </manifest>
+  ```
 
 ## My Note
 
