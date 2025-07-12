@@ -18,12 +18,23 @@
 
   ```kts
   dependencies {
-    ...
     // Compose Runtime
-    val rt_version = "1.8.3"
-    implementation ("androidx.compose.runtime:runtime:$rt_version")
-    implementation ("androidx.compose.runtime:runtime-livedata:$rt_version")
+    implementation (libs.androidx.runtime)
+    implementation (libs.androidx.runtime.livedata)
   }
+  ```
+
+- `gradle/libs.versions.toml`
+
+  ```toml
+  [versions]
+  runtime = "1.8.3"
+
+  [libraries]
+  androidx-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "runtime" }
+  androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtime" }
+
+  [plugins]
   ```
 
 ## Steps
