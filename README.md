@@ -115,7 +115,8 @@ dependencies {
 
 ## Resources
 
-- [Android Developers](https://developer.android.com/)
+- Android Developers
+  - [Jetpack Compose for Android Developers](https://developer.android.com/courses/pathways/compose)
   - [Training Courses](https://developer.android.com/courses)
     - For beginners
       - [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)
