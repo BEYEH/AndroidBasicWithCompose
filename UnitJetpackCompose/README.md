@@ -13,3 +13,8 @@
 ## Note
 
 ## Resources
+
+- Android Developers
+  - [Jetpack Compose](https://developer.android.com/courses/pathways/compose)
+- GitHub
+  - [codelab-android-compose](https://github.com/android/codelab-android-compose)
