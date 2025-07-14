@@ -12,6 +12,10 @@
 
 ## Note
 
+- Import classes related to Jetpack Compose in this project, use these from:
+  - For compiler and runtime classes : `androidx.compose.*`
+  - For UI toolkit and libraries : `androidx.compose.ui.*`
+
 ## Resources
 
 - Android Developers
