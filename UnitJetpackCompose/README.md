@@ -22,6 +22,7 @@
   - Replace the use of `remember` with `rememberSaveable`.
 - Animating your list.
   - Add the `animateDpAsState` composable.
+- Styling and theming your app.
 
 ## Note
 
@@ -45,5 +46,6 @@
 - Android Developers
   - [Jetpack Compose](https://developer.android.com/courses/pathways/compose)
   - [Animations in Compose](https://developer.android.com/develop/ui/compose/animation/introduction)
+  - [Material design specification](https://m3.material.io/)
 - GitHub
   - [codelab-android-compose](https://github.com/android/codelab-android-compose)
