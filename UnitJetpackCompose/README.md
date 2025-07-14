@@ -10,6 +10,14 @@
 
 ## Steps
 
+- Start a new composer project.
+- Tweaking the UI.
+- Reusing composables.
+- Creating columns and rows.
+- State in Compose.
+- State hoisting.
+- Creating a performant lazy list.
+
 ## Note
 
 - Import classes related to Jetpack Compose in this project, use these from:
