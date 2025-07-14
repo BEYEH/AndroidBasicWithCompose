@@ -15,6 +15,16 @@
 - Import classes related to Jetpack Compose in this project, use these from:
   - For compiler and runtime classes : `androidx.compose.*`
   - For UI toolkit and libraries : `androidx.compose.ui.*`
+- If data changes, Compose re-executes these functions with the new data,
+  creating an updated UI—this is called recomposition.
+- `remember` is used to guard against recomposition, so the state is not reset.
+- Jetpack Compose preview function:
+  - Start UI Check Mode.
+  - Start Interact Mode.
+  - Run Preview.
+- In Composable functions, state that is read or modified by multiple functions
+  should live in a common ancestor—this process is called `state hoisting`. To
+  hoist means to lift or elevate.
 
 ## Resources
 
