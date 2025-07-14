@@ -19,7 +19,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -80,7 +79,7 @@ fun OnboardingScreen(
 @Composable
 private fun Greetings(
     modifier: Modifier = Modifier,
-    names: List<String> = List(1000) { "$it" }
+    names: List<String> = List(1000) { "$it" },
 ) {
     LazyColumn(modifier = modifier.padding(vertical = 4.dp)) {
         items(items = names) { name ->
@@ -91,8 +90,7 @@ private fun Greetings(
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    var expanded by remember { mutableStateOf(false) }
-
+    var expanded by rememberSaveable { mutableStateOf(false) }
     val extraPadding = if (expanded) 48.dp else 0.dp
 
     Surface(

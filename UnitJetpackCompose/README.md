@@ -17,6 +17,9 @@
 - State in Compose.
 - State hoisting.
 - Creating a performant lazy list.
+  - Change from `Column` to `LazyColumn`.  
+- Persisting state.
+  - Replace the use of `remember` with `rememberSaveable`.
 
 ## Note
 
