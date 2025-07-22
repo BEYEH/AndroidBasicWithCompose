@@ -28,3 +28,7 @@
 ## Note
 
 ## Resources
+
+- GitHub
+  - [basic-android-kotlin-compose-training-inventory-app](https://github.com/google-developer-training/basic-android-kotlin-compose-training-inventory-app)
+  - [4_TodoApp_RoomDB](https://github.com/bimalkaf/JetpackCompose_Playground/tree/main/4_TodoApp_RoomDB)
