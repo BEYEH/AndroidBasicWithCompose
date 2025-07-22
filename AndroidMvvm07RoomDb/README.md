@@ -28,13 +28,31 @@
 
 ## Dependencies
 
+- AndroidMvvm07RoomDb/build.gradle.kts
+
+  ```kts
+  // Declare the KSP plugin in top level build.gradle.kts.
+  plugins {
+    id("com.google.devtools.ksp") version "2.0.21-1.0.27" apply false
+  }
+  ```
+
 - AndroidMvvm07RoomDb/app/build.gradle.kts
 
   ```kts
+  // Enable KSP in module-level build.gradle.kts.
+  plugins {
+      id("com.google.devtools.ksp")
+  }
+
   dependencies {
       // Compose Runtime
       implementation(libs.androidx.runtime)
       implementation(libs.androidx.runtime.livedata)
+      // Room
+      implementation(libs.androidx.room.runtime)
+      ksp(libs.androidx.room.compiler)
+      annotationProcessor(libs.androidx.room.compiler)
   }
   ```
 
@@ -43,10 +61,13 @@
   ```toml
   [versions]
   runtime = "1.8.3"
+  roomRuntime = "2.7.2"
   
   [libraries]
   androidx-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "runtime" }
   androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtime" }
+  androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+  androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
   
   [plugins]
   ```
@@ -60,6 +81,7 @@
 
 - Android Developers
   - [Compose Runtime](https://developer.android.com/jetpack/androidx/releases/compose-runtime)
+  - [Add the KSP plugin to your project](https://developer.android.com/build/migrate-to-ksp?authuser=1#add-ksp)
   - [Room](https://developer.android.com/jetpack/androidx/releases/room)
 - GitHub
   - [basic-android-kotlin-compose-training-inventory-app](https://github.com/google-developer-training/basic-android-kotlin-compose-training-inventory-app)
